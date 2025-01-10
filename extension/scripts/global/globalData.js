@@ -1,5 +1,6 @@
 "use strict";
 
+// noinspection JSUnresolvedReference
 chrome = typeof browser !== "undefined" ? browser : chrome;
 
 const FORUM_POST = "https://www.torn.com/forums.php#/p=threads&f=67&t=16243863";
@@ -497,6 +498,8 @@ const DEFAULT_STORAGE = {
 				energyWarning: new DefaultSetting({ type: "boolean", defaultValue: true }),
 				medicalLife: new DefaultSetting({ type: "boolean", defaultValue: true }),
 				openedSupplyPackValue: new DefaultSetting({ type: "boolean", defaultValue: true }),
+				hideRecycleMessage: new DefaultSetting({ type: "boolean", defaultValue: false }),
+				hideTooManyItemsWarning: new DefaultSetting({ type: "boolean", defaultValue: false }),
 			},
 			crimes: {
 				quickCrimes: new DefaultSetting({ type: "boolean", defaultValue: true }),
